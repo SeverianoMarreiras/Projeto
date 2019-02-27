@@ -1,0 +1,184 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&subset=latin-ext,vietnamese');
+body{
+	background-color: #dddddd;                      /*define a cor de fundo da do site*/
+}
+h2{		
+	font-family: 'Dancing Script';
+	text-align: justify;							/*da limites ao testo dentro da pagina web*/
+	text-indent: 50px;								/*define o espaço de paragrafo*/
+}
+p{					
+	font-family: 'Arial, Helvetica, sans-serif';	
+	text-align: justify;						 
+	text-indent: 30px ;										
+}
+
+figure.foto_legenda{								/*define um metodo da classe */
+	position: relative;								/*da borda ao conteudo , define tonalidade e cor */
+	border: 5px solid white ;						/*sombra da imagen */
+	box-shadow: 1px 1px 3px black;
+}
+figure.foto_legenda img{
+	position: 0px;									/*posiçao na pagina */
+	width: 100%;									/*espaçamento a direita*/
+	height:100%;									/*espaçamento a esquerda*/
+}
+
+figure.foto_legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 1px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height:100%;
+	padding:1px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+
+}
+
+figure.foto_legenda:hover figcaption{
+	opacity: 1;
+}
+/*formataçao do menu*/
+
+
+nav#Menu ul{
+	list-style: none;                       /* 1-retira os marcadore*/
+	text-transform: uppercase;				/*2-transforma em maisculo*/
+	position: relative;						/*usando a posiçao absoluta pode flutuar dentro de todo o site*/
+	top: -150px;
+	left: 385px;
+}
+nav#Menu li{
+	display: inline-block;					/* 3- deixa o menu em uma unica linha*/
+	background-color: #64A9A4;				/*4- cor de fundo dos botoes*/
+	padding:10px;							/* 5- cria um espaço dentro */
+	margin: 2px;							/*cria um espaço entre os botoes*/
+	transition:background-color 2s;			/*a transiçao de mudanca de cor e o tempo*/
+	border: 1px solid white ;
+	box-shadow: 1px 1px 2px #199e36;
+}
+nav#Menu li:hover {							/*efeito de passar o mause */
+	background-color: #199e36;				
+}
+
+nav#Menu{									/*faz o menu virar um bloco para flutuar*/
+	display: block;
+}
+#p1 {
+	position: relative;
+	left: 0px;
+	top: 0px
+}
+#p2{
+	position: relative;
+	left: 0px;
+	top: -300px
+}
+#p3{
+	position: relative;
+	left: 0px;
+	top: -600px
+}
+
+nav#Menu h1{         						/*retira o nome menu mas nao perde a semantica*/
+	display: none;
+}
+
+nav#Menu a {
+	color: black;
+	text-decoration: none;
+}
+nav#Menu a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+/* formataçao de interface*/
+
+div#interface{
+	width: 850px;
+	background-color: white;
+	margin: -8px auto auto auto ;
+	box-shadow: 0px 0px 10px rgb(0,0,0,.5);
+	padding: 10px ;
+}
+
+header#cabecalho img#icone{
+	position: relative;
+	left: 20px;
+	top: 1px;
+
+}
+header#cabecalho {
+	border-bottom: 5px #64A9A4 solid;
+	padding-bottom: 10px;
+	height: 150px ;
+	background-color: white;
+}
+header#cabecalho h1{
+	font-family: 'Dancing Script', cursive;
+	color: #64A9A4;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	position: relative;
+	left: 50px;
+	top: -25px;
+}
+
+section#corpo {
+	display: block;
+	width: 500px;
+	float: left;
+	border-right:5px solid #64A9A4;
+	padding: 15px;
+}
+section#corpo h2{
+	padding-bottom: 0px;
+}
+aside#lateral {
+	padding-top: 3px;
+	display: block;
+	width: 300px;
+	float: right ;
+}
+section#corpo video{
+
+	width: 90%;
+	height: 90%;
+	box-shadow: 0px 0px 0px 1px rgb(0,0,0,.5);
+	margin: -8px auto auto auto ;
+	padding: 5px;
+	overflow: hidden;
+
+}
+
+	
+
+
+footer#rodape{
+	clear: both;
+	border-top: 5px solid #64A9A4;
+
+}
+footer#rodape p {
+	text-align: center;
+}
+aside#corpo header#informa {
+	padding: 10px;
+	bottom: 100PX;
+}
+
+header#informa {
+	width: 250px;
+	background-color: #64a9a4;
+	margin: -8px auto auto auto ;
+	box-shadow: 0px 0px 10px rgb(0,0,0,.5);
+	padding: 10px ;
+	padding-top: 0px;
+}
+header#informa p{
+	color: white;
+}
